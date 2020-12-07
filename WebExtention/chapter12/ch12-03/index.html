@@ -5,42 +5,42 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
-	<title>フレックスボックスを使ったコラムレイアウト</title>
+	<title>ナビゲーションメニューを作成する</title>
 </head>
 <body>
 	<header>
 		<div class="container">
 		<div class="header-inner">
 			<!-- ヘッダーの要素 -->
-			<div class="logo">Header</div>
+			<button class="hamburger" id="mobile-menu"></button>
 		</div><!-- /.header-inner -->
 	</div><!-- /.container -->
 	</header>
 	
 	<nav>
 		<div class="container">
-		<div class="nav-inner">ホーム 会社案内 製品案内 サポート お問い合わせ</div>
+		<ul class="navbar">
+			<li><a href="#">ホーム</a></li>
+			<li><a href="#">会社案内</a></li>
+			<li><a href="#">製品案内</a></li>
+			<li><a href="#">サポート</a></li>
+			<li><a href="#">お問い合わせ</a></li>
+		</ul>
 	</div>
 	</nav>
 
 	<section>
 		<div class="container">
 		<main>
-			<div class="main-inner">
+			<div class="main">
 				<!-- コンテンツの要素 -->
 				<p class="main-title">Main</p>
 			</div><!-- /.main-inner -->
 		</main>
-			<aside class="sidebar sidebar1">
-			<!-- サイドバー1の要素 -->
-			sidebar1
+			<aside class="sidebar">
+			<!-- サイドバーの要素 -->
+			sidebar
 		</aside> <!-- / .sidebar -->
-
-		<aside class="sidebar sidebar2">
-			<!-- サイドバー2の要素 -->
-			sidebar2
-		</aside>
-
 	</div><!-- /.container -->
 	</section>
 
@@ -52,5 +52,6 @@
 		</div><!-- /.footer-inner -->
 	</div><!-- /.container -->
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>

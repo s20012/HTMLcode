@@ -42,8 +42,8 @@ main p:last-child {
 	height: 400px;
 }
 
-.sidebar-inner {
-	padding: 10px 10px 0 10px;
+.sidebar  {
+	padding: 20px 10px 20px 10px;
 	background: #c0f5b9;
 }
 
@@ -61,16 +61,6 @@ main p:last-child {
 	background: #bad7f5;
 }
 
-nav {
-	margin-bottom: 20px;
-}
-
-footer {
-	margin-top: 20px;
-}
-
-
-
 @media only screen and (min-width: 768px) {
 	section .container {
 		flex-flow: row;
@@ -78,9 +68,18 @@ footer {
 
 	main {
 		flex: 1 1 auto;
+		order: 2;
 	}
 
-	.sidebar {
-		flex: 0 0 340px;
+	.sidebar1 {
+		flex: 0 0 200px;
+		order: 1;
 	}
+
+	.sidebar2 {
+		flex: 0 0 250px;
+		order: 3;
+
+	}
+
 }
